@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="sidebar-container">
+          <div class="sidebar-icon">
+            <img src="" alt="sidebar" class="sidebarIcon" />
+          </div>
+          <div class="tasks-group">
+            <div class="group-title">Tasks</div>
+            <div class="nav-tasks selected">
+              <img src="" alt="today" class="todayIcon" />
+              <div class="name" data-value="Today">Today</div>
+              <div class="count" data-value="0">0</div>
+            </div>
+            <div class="nav-tasks">
+              <img src="" alt="Tomorrow" class="tomorrowIcon" />
+              <div class="name" data-value="Tomorrow">Tomorrow</div>
+              <div class="count" data-value="0">0</div>
+            </div>
+            <div class="nav-tasks">
+              <img src="" alt="This week" class="thisWeekIcon" />
+              <div class="name" data-value="This Week">This Week</div>
+              <div class="count" data-value="0">0</div>
+            </div>
+            <div class="nav-tasks">
+              <img src="" alt="All tasks" class="taskIcon" />
+              <div class="name" data-value="all-tasks">All Tasks</div>
+              <div class="count" data-value="0">0</div>
+            </div>
+            <div class="nav-tasks">
+              <img src="" alt="Completed" class="completedIcon" />
+              <div class="name" data-value="Completed">Completed</div>
+              <div class="count" data-value="0">0</div>
+            </div>
+          </div>
+          <div class="projects-group">
+            <div class="group-title">Projects</div>
+            <div class="add-project-popup-div hidden">
+              <div class="add-project-popup">
+                <input type="text" name="project-title" class="project-title" />
+                <div class="add-project-buttons">
+                  <div class="add-project-cancel-button">Cancel</div>
+                  <div class="add-project-add-button">Add</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="add-project-container">
+              <div class="add-project">
+                <img src="" alt="Add" class="addIcon" />
+                <div class="name">Add Project</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <div class="second-sidebar-icon-div hidden">
+            <div class="second-sidebar-icon">
+              <img src="" alt="sidebar" class="sidebarIcon" />
+            </div>
+          </div>
+          <div class="todo-list">Todo List</div>
+        </div>
+        <div class="tasks-display"></div>
+      </div>
+    </div>
+  </body>
+</html>
